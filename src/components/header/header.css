@@ -1,0 +1,72 @@
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+.home {
+    grid-area: home;
+}
+
+.about {
+    grid-area: about;
+}
+
+.pricing {
+    grid-area: pricing;
+}
+
+.work {
+    grid-area: work;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: ". . home about pricing work . .";
+    grid-area: nav-links
+}
+
+.login {
+    display: grid;
+    text-align: end;
+}
+
+.register {
+    display: grid;
+    text-align: end;
+}
+
+.side-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ". . login register";
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "title nav-links side-links";
+    background-color: aquamarine;
+    margin: 0.5rem;
+}
+
+.mobile-title {
+    grid-area: mobile-title;
+    text-align: center;
+}
+
+#links-dropdown {
+    background-color: maroon;
+}
+
+.mobile-links {
+    grid-area: mobile-links;
+    text-align: center;
+}
+
+.mobile-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "mobile-title mobile-links";
+    background-color: aquamarine;
+}

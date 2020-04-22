@@ -1,44 +1,32 @@
-.nav-bar {
-    background-color: #006d77;
-}
-
-.nav-bar-brand {
-    font-size: 2.2rem;
-}
-
-.nav-link-list {
-    font-size: 1.2rem;
-}
-
-.main-area {
-    grid-area: main-area;
-    font-size: 1.5rem;
-}
-
-.side-area {
-    grid-area: side-area;
+.carousel {
+    grid-area: carousel;
+    background-color: cadetblue;
     padding: 1rem;
-    font-size: 1.2rem;
-    background: #006d77;
-    color: white;
 }
 
-.body-container {
-    padding: 1rem;
+.home-content {
+    grid-area: home-content;
+}
+
+.side-bar {
+    grid-area: side-bar;
+}
+
+.homepage {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(3rem, auto);
-    column-gap: 1rem;
-    grid-template-areas: "main-area" "side-area";
+    margin: 1rem;
+    row-gap: 1rem;
+    grid-template-areas: "home-content" "carousel" "side-bar";
 }
 
 @media screen and (min-width: 760px) {
-    .body-container {
-        padding: 1rem;
+    .homepage {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: minmax(3rem, auto);
+        grid-template-columns: 3fr 1fr;
+        margin: 1.2rem;
+        grid-template-areas: "home-content carousel" "home-content side-bar";
         column-gap: 1rem;
-        grid-template-areas: "main-area main-area main-area ." "main-area main-area main-area side-area" "main-area main-area main-area ."
+        row-gap: 1rem;
     }
 }

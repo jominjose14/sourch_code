@@ -1,57 +1,55 @@
 import React from "react";
-import {Nav, Navbar} from "react-bootstrap";
+import {Carousel} from "react-bootstrap";
 import "./homepage.css";
 
-const HomePage = (props) => {
+const HomePage = () => {
     return (
         <div className={"homepage"}>
-            <Navbar variant={"dark"} className={"nav-bar"}>
-                <Navbar.Brand href={"#"} className={"nav-bar-brand"}>Sourch</Navbar.Brand>
-                <Nav className={"mr-auto nav-link-list"}>
-                    <Nav.Link href={"#"}>Home</Nav.Link>
-                    <Nav.Link href={"#"}>Sign Up</Nav.Link>
-                    <Nav.Link href={"#"}>Pricing</Nav.Link>
-                    <Nav.Link href={"#"}>Work</Nav.Link>
-                </Nav>
-            </Navbar>
-
-            <div className={"body-container"}>
-                <div className={"main-area"}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium animi architecto
-                        asperiores aut cumque debitis dignissimos dolorem eius error eum excepturi exercitationem itaque
-                        laudantium magni mollitia, odit officia quis quos, saepe similique, sit veniam voluptates?
-                        Delectus, deleniti dolorem ea error illum minima qui quidem temporibus voluptatem voluptates! At
-                        deleniti deserunt doloribus earum fuga natus nulla provident qui, reiciendis repellendus, saepe
-                        similique sit suscipit ullam unde veniam, voluptas? Consequatur perferendis, quisquam? Ad
-                        consectetur cupiditate debitis dignissimos, earum enim eos excepturi in, ipsa iste labore
-                        laboriosam magni minima, quasi quidem reprehenderit sunt voluptatum. Aspernatur atque,
-                        cupiditate delectus doloribus ducimus esse exercitationem ipsa itaque iusto neque nesciunt odit
-                        possimus recusandae repellat sapiente sequi tempora veritatis! Cupiditate dolor dolorum ea
-                        labore neque porro quis ratione reiciendis. Ab aperiam dolores id iste nobis optio quod
-                        repellendus. A animi architecto aspernatur, cum dicta dolor est facere inventore ipsam labore
-                        libero maiores minima mollitia nemo neque nostrum officiis provident quae quasi quisquam
-                        repellendus reprehenderit sapiente ullam voluptas voluptatem. At atque blanditiis consequatur
-                        culpa doloremque eius laudantium magnam maiores nulla obcaecati odio placeat praesentium rerum,
-                        sint tempora tempore temporibus voluptate! Accusamus accusantium adipisci aperiam asperiores
-                        assumenda atque consequuntur debitis deleniti ducimus est excepturi explicabo facere fuga
-                        inventore iste itaque laboriosam laborum libero magnam necessitatibus neque nisi, numquam
-                        officia pariatur perspiciatis porro quam quos, reiciendis rem sequi soluta sunt suscipit,
-                        tempore! Aliquid assumenda autem consectetur culpa cumque dicta, dolore ea eligendi enim, error
-                        eveniet, fugiat id itaque labore magnam molestias nesciunt nulla perspiciatis possimus quaerat
-                        quasi quisquam reiciendis repellat sed tempora totam ut voluptas. Architecto asperiores autem
-                        consequuntur cumque delectus, deserunt eligendi eveniet excepturi exercitationem inventore
-                        labore laboriosam laborum magni maxime molestiae necessitatibus neque non officia perspiciatis
-                        possimus quae quaerat quam quia quis repellendus sed sequi sit vero vitae voluptas. Consectetur,
-                        dolor dolore doloremque iusto libero magni voluptas.</p>
-                </div>
-
-                <div className={"side-area"}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci blanditiis commodi
-                        consectetur
-                        dolor esse in magnam magni, minus nemo nobis obcaecati omnis repellendus sit suscipit unde
-                        voluptates. Animi at aut cumque cupiditate, dicta dolorem dolorum inventore itaque, magni minus
-                        molestiae necessitatibus, nesciunt nostrum nulla quasi sunt voluptas! Dolor, fugiat.</p>
-                </div>
+            <div className="home-content">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolores dolorum
+                    eaque ex harum iste iusto magni nisi nobis odit officia optio perspiciatis, porro quod quos,
+                    repellendus similique, sunt tempora totam! A accusamus aperiam asperiores assumenda cupiditate
+                    deleniti dicta dolores eligendi et eum ex exercitationem expedita fugit hic id illum iusto magnam
+                    mollitia necessitatibus non nulla omnis optio perspiciatis, possimus quae quaerat qui quibusdam
+                    quidem quis repudiandae rerum sequi sit sunt tempore temporibus tenetur voluptas. Accusantium
+                    aperiam aspernatur, assumenda consequuntur delectus, ducimus ea facere facilis omnis quas recusandae
+                    voluptate? A, ab animi cum, doloremque doloribus eius eos et excepturi illum inventore iste magnam
+                    maiores, maxime odio placeat repudiandae sequi totam. Accusamus animi architecto beatae earum eum,
+                    excepturi facere facilis fuga libero nam nihil nobis non obcaecati quis quisquam repudiandae unde?
+                    Aliquid eius maxime non placeat voluptas? Aliquam amet cum debitis facilis, id, incidunt magnam
+                    nobis officiis provident ratione saepe velit! Animi atque consequatur cum dicta dignissimos dolore
+                    dolorem enim esse minus natus non nulla, perspiciatis quam quod repellat tempora totam? A ad aliquam
+                    aperiam architecto aspernatur atque autem commodi, debitis dolor dolores earum eius fugiat ipsa iste
+                    laudantium minus modi molestiae omnis possimus quae quis ratione rem rerum, soluta sunt, suscipit
+                    tempore tenetur veniam veritatis voluptate. Consequuntur dignissimos doloribus eaque expedita
+                    incidunt labore molestiae molestias nemo, nostrum obcaecati quia, quisquam repudiandae rerum sunt
+                    tempora tempore veniam voluptatum. Accusamus accusantium aspernatur at atque aut, doloremque ducimus
+                    ea eligendi, eos itaque maiores nemo non quibusdam quis recusandae sapiente veniam vero, vitae!</h3>
+            </div>
+            <div className={"carousel"}>
+                <Carousel>
+                    <Carousel.Item>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, dolorem dolorum ducimus
+                            facilis itaque natus, non nulla obcaecati placeat praesentium, quae quam quisquam totam.
+                            Blanditiis earum est qui quibusdam. Quos.</h3>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, illum incidunt non
+                            quidem rerum sequi. Animi, eaque eius itaque nemo quia quidem sapiente sequi sit? Enim
+                            libero nesciunt sint tenetur.</h3>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid culpa dolorum
+                            ducimus ea explicabo fugiat harum ipsam iusto molestias mollitia nemo nesciunt non,
+                            repudiandae sequi, temporibus ut vel voluptate?</h3>
+                    </Carousel.Item>
+                </Carousel>
+            </div>
+            <div className="side-bar">
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dolor dolorum eos
+                    ipsam optio quo sint voluptatum. Esse, explicabo facere fuga in ipsam magni maiores minima molestiae
+                    neque nesciunt obcaecati placeat quaerat quas reiciendis sed tempora tempore vel veritatis vero,
+                    voluptatibus. Consequuntur, illum iste molestias obcaecati repudiandae sit tenetur?</h4>
             </div>
         </div>
     );
