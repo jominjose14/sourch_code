@@ -1,5 +1,6 @@
 import React from "react";
 import {auth} from "../firebase/firebase.config";
+import { connect } from "react-redux";
 
 class Header extends React.Component {
     constructor(props) {
@@ -95,4 +96,8 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+const mapStateToProps = (state) => {
+    return({currentUser: state.user.currentUser});
+}
+
+export default connect(mapStateToProps)(Header);
